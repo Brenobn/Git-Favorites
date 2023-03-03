@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --text-color: #E1E1E6;
+  --text-remove-color: #F75A68;
+
+  --hue: 195;
+  --primary-color: hsl(var(--hue),72%, 13%);
+  --button-bg: hsl(var(--hue), 91%, 25%);
+
+  --bg-color: #0f0f11;
+
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search input {
+  height: 3.2rem;
+  border: 1px solid #06181C;
+  border-radius: 0.5rem;
+
+  background: #06181C;
+
+  width: 46.2rem;
+  height: 4.8rem;
+
+  text-align: center;
+  color: white;
+}
+
+.search button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  height: 3.2rem;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+
+  width: 17.0rem;
+  height: 4.8rem;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+
+  width: 100%;
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+table tr:nth-child(odd) {
+  background: #06161B;
+}
+
+table tr {
+  background: #1c2d31;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: 700;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  
+  color: #F75A68;
+}
