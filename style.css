@@ -104,10 +104,11 @@ header h1 {
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  max-width: 100%;
 
-  margin-top: 8rem;
+  border-spacing: 0;
+  border: 3px solid #5c858eb7;
+  border-radius: 1.2rem;
 }
 
 table * {
